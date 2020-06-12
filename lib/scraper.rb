@@ -20,6 +20,7 @@ class Scraper
       course.schedule = doc.css(".post").fist.css("date").text 
       course.description = doc.css(".post").fist.css("p").text
     end
+  end
   
   def print_courses
     self.make_courses
